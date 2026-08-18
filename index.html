@@ -409,9 +409,12 @@ linear-gradient(135deg,#f0bd68,#d47f79 45%,#60496f)}
 </section>
 
 <section class="block" id="realtime">
- <h2>11. 단체채팅·보이스룸 실시간 설계</h2>
+ <h2>11. 전체채팅·보이스룸 실시간 설계</h2>
+ <div class="note"><b>전체채팅 진입 원칙:</b> 하단 <strong>대화</strong> 탭에서 <strong>채팅</strong>을 선택하면 채팅방 목록 없이 즉시 공용 <code>global</code> 채널을 엽니다. 모든 정회원이 같은 메시지 이력을 보고 실시간으로 송수신하며, 서버 연결 실패 메시지는 전송 완료로 표시하지 않습니다.</div>
  <div class="grid two">
-  <div class="card"><b>단체채팅</b>
+  <div class="card"><b>전체채팅</b>
+   카카오톡 오픈채팅형 단일 공용 채널<br>
+   대화 → 채팅 선택 시 별도 방 선택 없이 즉시 입장<br>
    WebSocket 기반 실시간 메시지<br>
    메시지 순번과 client_message_id로 중복 방지<br>
    연결 복구 시 마지막 수신 offset부터 재동기화<br>
